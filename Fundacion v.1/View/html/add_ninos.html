@@ -4,9 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>::AGREGAR NIÑOS::</title>
+    <title>Registro niños</title>
 </head>
+
+</style>
 <body>
-    
+    <h1> Registro Niños Beneficiarios</h1>
+    <fieldset>
+        <legend>Datos del Acudiente</legend>
+        <br>
+        Nombre Acudiente: &nbsp;<Input type="text" id="nomAcudiente" name="nomAcudiente"></Input> 
+        <br>
+        <br>
+        Apellido Acudiente: <Input type="text" name="apeAcudiente" id="apeAcudiente"></Input> 
+        <br>
+        <br>
+        Telefono:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <Input type="text" name="Telefono" id="Telefono"></Input>
+        <br>
+        <br>
+        Direccion: &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; 
+        <input type="text" name="Correo" id="correo"></Input>
+    </fieldset>
+    <br>
+    <br>
+    <fieldset>
+        <legend> Datos de los niños</legend>
+        <br>
+        Nombre: <Input type="text" name="nombre" id="nombre"></Input> 
+        <br>
+        <br>
+        Apellido: <Input type="text" name="apellido" id="apellido"></Input> 
+        <br>
+        <br>
+        Edad: &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<Input type="number" name="edad" id="edad"></Input>
+        <br>
+        <p>Cuenta con Padrino:
+        <input type="radio" value="Si" name="padrino" id="padrino">Si
+        <input type="radio" value="No" name="padrino" id="padrino">No
+        </p>
+        Fecha registro: <input type="date">
+        <br>
+    </fieldset>
+    <br>
+    <input type="submit" name="Registrar" value="Registrar" id="registrar">
+    <input type="submit" name="Cancelar" value="Cancelar" id="cancelar">
+    <br>
 </body>
 </html>
