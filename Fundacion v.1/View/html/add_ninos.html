@@ -4,9 +4,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>::AGREGAR NIÑOS::</title>
+    <title>Registro niños</title>
 </head>
+
+</style>
 <body>
+    <h1> Registro Niños Beneficiarios</h1>
+    <form method="POST" action="">
+        <fieldset>
+            <legend>Datos del Acudiente</legend>
+            <br>
+            <label for="nomAcudiente">Nombre Acudiente:</label>
+            &nbsp;<Input type="text" id="nomAcudiente" name="nomAcudiente" required></Input> 
+            <br>
+            <br>
+            <label for="apeAcudiente">Apellido Acudiente:</label>
+            <Input type="text" name="apeAcudiente" id="apeAcudiente" required></Input> 
+            <br>
+            <br>
+            <label for="Telefono">Telefono:</label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <Input type="text" name="Telefono" id="Telefono" required></Input>
+            <br>
+            <br>
+            <label for="direccion">Direccion:</label>             
+            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; 
+            <input type="text" name="direccion" id="direccion"></Input>
+        </fieldset>
+        <br>
+        <br>
+        <fieldset>
+            <legend> Datos de los niños</legend>
+            <br>
+            <label for="nombre">Nombre:</label> 
+            &nbsp;&nbsp;&nbsp;<Input type="text" name="nombre" id="nombre" required></Input> 
+            <br>
+            <br>
+            <label for="apellido">Apellidos:</label> 
+            <Input type="text" name="apellido" id="apellido" required></Input> 
+            <br>
+            <br>
+            <label for="edad">Edad:</label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<Input type="number" name="edad" id="edad"></Input>
+            <br>
+            <p><label>Cuenta con Padrino:</label>
+            <input type="radio" value="Si" name="padrino" id="padrino">Si
+            <input type="radio" value="No" name="padrino" id="padrino">No
+            </p>
+            <label for="fecha">Fecha registro:</label>
+            <input type="date" id="fecha" name="fecha">
+            <br>
+        </fieldset>
+        <br>
+        <button type="submit">Registrar</button>
+        <a href="niños.html"><input type="button" name="Cancelar" value="Cancelar" id="cancelar">
+        <br>
+
+    </form>
     
 </body>
 </html>
