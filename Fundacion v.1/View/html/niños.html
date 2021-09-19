@@ -102,13 +102,13 @@
                             <td></td>
                             <td></td>
                             <td>
-                                <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modaleditar">        Editar
+                                <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modaleditar">Editar
                   </button>
                                 </button>
-                                <button type="button" class="btn btn-outline-primary">
+                                <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalasignar">
                     Asignar Padrino
                   </button>
-                                <button type="button" class="btn btn-outline-primary">
+                                <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modaleliminar">
                     Eliminar
                   </button>
                             </td>
@@ -123,10 +123,10 @@
                             <td>
                                 <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modaleditar">        Editar
                   </button>
-                                <button type="button" class="btn btn-outline-primary">
+                                <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalasignar">
                     Asignar Padrino
                   </button>
-                                <button type="button" class="btn btn-outline-primary">
+                                <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modaleliminar">
                     Eliminar
                   </button>
                             </td>
@@ -141,10 +141,10 @@
                             <td>
                                 <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modaleditar">        Editar
                   </button>
-                                <button type="button" class="btn btn-outline-primary">
+                                <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalasignar">
                     Asignar Padrino
                   </button>
-                                <button type="button" class="btn btn-outline-primary">
+                                <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modaleliminar">
                     Eliminar
                   </button>
                             </td>
@@ -159,10 +159,10 @@
                             <td>
                                 <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modaleditar">        Editar
                   </button>
-                                <button type="button" class="btn btn-outline-primary">
+                                <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalasignar">
                     Asignar Padrino
                   </button>
-                                <button type="button" class="btn btn-outline-primary">
+                                <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modaleliminar">
                     Eliminar
                   </button>
                             </td>
@@ -177,10 +177,10 @@
                             <td>
                                 <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modaleditar">        Editar
                   </button>
-                                <button type="button" class="btn btn-outline-primary">
+                                <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalasignar">
                     Asignar Padrino
                   </button>
-                                <button type="button" class="btn btn-outline-primary">
+                                <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modaleliminar">
                     Eliminar
                   </button>
                             </td>
@@ -191,7 +191,7 @@
         </div>
     </section>
 
-    <!--Modals editar-->
+    <!--Modal editar-->
     <div class="modal fade" id="modaleditar" tabindex="-1" aria-labelledby="modaleditar" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -270,6 +270,43 @@
       </div>
     </div>
 
+    <!--Modal Asignar-->
+    <div class="modal fade" id="modalasignar" tabindex="-1" aria-labelledby="modalasignar" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Confirmacion Asignacion Padrino</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Esta seguro que desea asignarle este padrino al niño?
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-primary">Asignar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Modal Asignar-->
+    <div class="modal fade" id="modaleliminar" tabindex="-1" aria-labelledby="modaleliminar" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Confirmacion Asignacion Padrino</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Esta seguro que desea borrar este niño?
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-danger">Eliminar</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <!--Piecera-->
     <footer></footer>
 
