@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+ <title>Inicio</title>
+ <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="footer, address, phone, icons" />
+ 
+	<title>Responsive Footer</title>
+
+</head>
+
+<body>
+
+  <form action="/action_page.php">
+	<a>Padrino</a> <a href="cerrar_sesion.php">Cerrar Sesion</a>
+  </form>
+
+
+  <div class="btn-group" style="width:100%">
+  <a href="index.php"><button style="width:16.663%">Inicio</button></a>
+  <a href="Apadrinar.html"><button style="width:16.663%">Apadrinar</button></a>
+  <a href="empleadosD.php"><button style="width:16.663%">Consultar</button></a>
+  <a href="reportes.php"><button style="width:16.663%">Reportes</button></a>
+  <a href="Notificaciones.php"><button style="width:16.663%">Notificaciones</button></a>
+ 
+  <br>
+  <br>
+	<section id="container">
+	
+		<h1><center>Bienvenido al sistema <?php echo $_SESSION["nombre_empleado"];	 ?></center> </h1>
+
+	</section>
+</body>
+
+<footer class="footer-distributed">
+  <div class="footer-left">
+      <h3>Nombre<span>Empresa</span></h3>
+
+      <p class="footer-links">
+          <a href="index.htmal">Inicio</a>
+          |
+          <a href="Nosotros.html">Sobre Nosotros</a>
+          |
+          <a href="#">About</a>
+          |
+          <a href="#">Contacto</a>
+      </p>
+
+      <p class="footer-company-name">© 2019 Sonrisitas Derechos reservados </p>
+  </div>
+
+  <div class="footer-center">
+      <div>
+          <i class="fa fa-map-marker"></i>
+            <p><span>direccion</span>
+              Colombia, Bogota - 110111</p>
+      </div>
+
+      <div>
+          <i class="fa fa-phone"></i>
+          <p>+57 321 477 1511</p>
+      </div>
+      <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:comercial01.bodaselite@gmail.com">comercial01.Sonrisitas@gmail.com</a></p>
+
+
+      </div>
+  </div>
+  <div class="footer-right">
+      <p class="footer-company-about">
+          <span>Mas de nosotros</span>
+         Ofrecemos la mejor confianza y seguridad para nuestros niños.</p>
+      <div class="footer-icons">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-youtube"></i></a>
+      </div>
+  </div>
+</footer>
