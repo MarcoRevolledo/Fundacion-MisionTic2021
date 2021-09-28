@@ -1,33 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>::DASHBOARD::</title>
-  </head>
-  <body>
-    <!-- BARRA PRINCIPAL CON SESION INICIADA-->
-    >
-    <header class="">
-      <ul class="">
-        <li><a href="#" class="">Home</a></li>
-        <li><a href="#" class="">¿Quienes Somos?</a></li>
-        <li><a href="#" class="">Colabora</a></li>
-        <li><a href="#" class="">FAQs</a></li>
-      </ul>
-      <div class="">
-        <div class="">
-          <ul class="">
-            <li><a class="dropdown-item" href="niños.html">Niños</a></li>
-            <li><a class="dropdown-item" href="padrinos.html">Padrinos</a></li>
-            <li><hr class="dropdown-divider" /></li>
-            <li>
-              <a class="dropdown-item" href="index.html">Cerrar sesión</a>
-            </li>
-          </ul>
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
+
+        <title>::DASHBOARD::</title>
+    </head>
+
+    <body>
+        <!-- BARRA PRINCIPAL CON SESION INICIADA-->
+        <div class="container-fluid bg-primary bg-opacity-40">
+            <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 ">
+                <a class="d-flex  align-items-center col-md-1 mb-2 mb-md-0 text-dark text-decoration-none text-white " href="index.html">
+                    <img src="../img/Sonrisas Magicas 2.png" alt="mdo" width="160" height="45" class="" />
+                </a>
+                <ul class="nav col-12 col-md-8 mb-2 justify-content-center mb-md-0">
+                    <li><a href="index.html" class="nav-link px-2 link-secondary text-white">Home</a></li>
+                    <li><a href="#" class="nav-link px-2 link-dark text-white" >¿Quienes Somos?</a></li>
+                    <li><a href="#" class="nav-link px-2 link-dark text-white">Colabora</a></li>
+                    <li><a href="#" class="nav-link px-2 link-dark text-white">FAQs</a></li>
+                </ul>
+
+                <div class="dropdown text-end col-md-1">
+                    <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle text-end" id="menudesplegable" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle" />
+                    </a>
+                    <ul class="dropdown-menu text-small" aria-labelledby="menudesplegable">
+                        <li><a class="dropdown-item" href="dashboard.html">Dashboard</a></li>
+                        <li><a class="dropdown-item" href="niños.html">Niños</a></li>
+                        <li><a class="dropdown-item" href="padrinos.html">Padrinos</a></li>
+                        
+                        <li><hr class="dropdown-divider" /></li>
+                        <li><a class="dropdown-item" href="index.html">Cerrar sesión</a></li>
+                    </ul>
+                </div>
+            </header>
         </div>
-      </div>
-    </header>
-  </body>
+
+        <!--CARTAS DE DASHBOARD-->
+        <div class="container">
+            <div class="row">
+                <div class="card m-3" style="width: 18rem;">
+                    <img src="../img/ninos.jpg" class="card-img-top" alt="Icono Niños">
+                    <div class="card-body">
+                        <h5 class="card-title">Niños</h5>
+                        <p class="card-text">Ingresa aqui para administrar niños.</p>
+                        <a href="niños.html" class="btn btn-primary">Ir a niños</a>
+                    </div>
+                </div>
+
+                <div class="card m-3" style="width: 18rem;">
+                    <img src="../img/padrinos.jpg" class="card-img-top" alt="Icono Niños">
+                    <div class="card-body">
+                        <h5 class="card-title">Padrinos</h5>
+                        <p class="card-text">Ingresa aqui para administrar padrinos.</p>
+                        <a href="padrinos.html" class="btn btn-primary">Ir a Padrinos</a>
+                    </div>
+                </div>
+                
+                <div class="card m-3" style="width: 18rem;">
+                    <a class="text-decoration-none" href="index.html"><img src="../img/salida.png" class="card-img-top" alt="Icono Niños"></a>
+                        <div class="card-body">
+
+                            <a href="index.html" class=" text-decoration-none"><h5 class="card-title">Salida Segura</h5></a>
+                        </div>
+                    </div>
+            </div>
+            <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    </body>
+
 </html>
