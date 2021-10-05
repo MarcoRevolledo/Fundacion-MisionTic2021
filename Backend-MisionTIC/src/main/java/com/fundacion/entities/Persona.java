@@ -13,26 +13,26 @@ import java.io.File;
 @Table(name="personas")
 public class Persona {
 	
-	@Column(nullable = false,unique = false)
+	@Column(name="tipo_doc",nullable = false,unique = false)
 	protected String tipo_doc;
 	
 	@Id
-	@Column(nullable = false,unique = true)
+	@Column(name="doc",nullable = false,unique = true)
 	protected Integer doc;
 	
-	@Column(nullable = false,unique = false)
+	@Column(name="apellido",nullable = false,unique = false)
 	protected String apellido;
 	
-	@Column(nullable = false,unique = false)
+	@Column(name="nombres",nullable = false,unique = false)
 	protected String nombres;
 	
-	@Column(nullable = false,unique = false)
+	@Column(name="fec_nac",nullable = false,unique = false)
 	protected Date fec_nac;
 	
-	@Column(nullable = false,unique = false)
+	@Column(name="foto",nullable = false,unique = false)
 	protected File foto;
 	
-	@Column(nullable = false, unique = false)
+	@Column(name="direccion",nullable = false, unique = false)
 	protected String direccion;
 
 	public Integer getDoc() {
@@ -73,5 +73,18 @@ public class Persona {
 	public void setFoto(File foto) {
 		this.foto = foto;
 	}
-	public String getNombres()
+	public String getNombres() {
+		return nombres;
+	}
+	
+	public void setNombres(String nombres) {
+		this.nombres = nombres;
+	}
+	
+	public void setTipo_doc(String tipo_doc) {
+		this.tipo_doc = tipo_doc;
+	}
+	 public String getTipo_doc() {
+	     return tipo_doc; 	 
+	 }
 }
