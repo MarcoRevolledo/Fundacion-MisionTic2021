@@ -1,5 +1,5 @@
 package com.fundacion.entities;
-/*
+
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -11,9 +11,9 @@ import javax.persistence.OneToOne;
 import javax.persistence.Table;
 @Entity
 @Table(name="padrinos")
-*/
+
 public class Padrino {
-/*	
+
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -84,5 +84,5 @@ public class Padrino {
 		this.contrasena = contrasena;
 	}
 	
-*/	
+	
 }
