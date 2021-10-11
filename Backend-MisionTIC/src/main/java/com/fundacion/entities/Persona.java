@@ -14,32 +14,35 @@ import java.io.File;
 public class Persona {
 	
 	@Column(name="tipo_doc",nullable = false,unique = false)
-	protected String tipo_doc;
+	private String tipo_doc;
 	
 	@Id
 	@Column(name="doc",nullable = false,unique = true)
-	protected Integer doc;
+	private String doc;
 	
 	@Column(name="apellido",nullable = false,unique = false)
-	protected String apellido;
+	private String apellido;
 	
 	@Column(name="nombres",nullable = false,unique = false)
-	protected String nombres;
+	private String nombres;
 	
 	@Column(name="fec_nac",nullable = false,unique = false)
-	protected Date fec_nac;
+	private Date fec_nac;
 	
 	@Column(name="foto",nullable = false,unique = false)
-	protected File foto;
+	private File foto;
 	
 	@Column(name="direccion",nullable = false, unique = false)
-	protected String direccion;
-
-	public Integer getDoc() {
+	private String direccion;
+	
+	@Column(name="fec_registro",nullable = false, unique = false)
+	private String fec_registro;
+	
+	public String getDoc() {
 		return doc;
 	}
 
-	public void setDoc(Integer doc) {
+	public void setDoc(String doc) {
 		this.doc = doc;
 	}
 
@@ -87,4 +90,12 @@ public class Persona {
 	 public String getTipo_doc() {
 	     return tipo_doc; 	 
 	 }
+
+	public String getFec_registro() {
+		return fec_registro;
+	}
+
+	public void setFec_registro(String fec_registro) {
+		this.fec_registro = fec_registro;
+	}
 }

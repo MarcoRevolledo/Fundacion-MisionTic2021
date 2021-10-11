@@ -1,34 +1,53 @@
 package com.fundacion.entities;
-
-import java.util.Date;
-
+/*
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="niño")
-public class Niño extends Persona {
-	
+@Table(name="nino")
+*/
+public class Niño {
+	/*
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name="id_nino", nullable = false, unique = true)
-	private Integer id; 
+	private Integer id;
 	
-	@Column(name="acudiente", nullable = false, unique= false)
+	@OneToOne(cascade = CascadeType.ALL)
+	@JoinColumn(name="doc_persona_fk", referencedColumnName = "doc_persona")
+	private Persona persona;
+	
+	@Column(name="acudiente",nullable = false,unique = false)
 	private String acudiente;
 	
-	@Column(name="contacto", nullable = false, unique = false)
-	private String contacto;
+	@Column(name="contacto_acudiente",nullable = false,unique = false)
+	private String contacto_acudiente;
 	
-	@Column(name="fec_registro", nullable = false, unique= false)
-	private Date fec_registro;
+	@OneToOne(cascade = CascadeType.DETACH)
+	@JoinColumn(name="id_padrino_fk", referencedColumnName = "id_padrino")
+	private Padrino padrino;
 
 	public Integer getId() {
 		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+	public Persona getPersona() {
+		return persona;
+	}
+
+	public void setPersona(Persona persona) {
+		this.persona = persona;
 	}
 
 	public String getAcudiente() {
@@ -39,23 +58,21 @@ public class Niño extends Persona {
 		this.acudiente = acudiente;
 	}
 
-	public String getContacto() {
-		return contacto;
+	public String getContacto_acudiente() {
+		return contacto_acudiente;
 	}
 
-	public void setContacto(String contacto) {
-		this.contacto = contacto;
+	public void setContacto_acudiente(String contacto_acudiente) {
+		this.contacto_acudiente = contacto_acudiente;
 	}
 
-	public Date getFec_registro() {
-		return fec_registro;
+	public Padrino getPadrino() {
+		return padrino;
 	}
 
-	public void setFec_registro(Date fec_registro) {
-		this.fec_registro = fec_registro;
+	public void setPadrino(Padrino padrino) {
+		this.padrino = padrino;
 	}
 	
-	
-	
-
+*/
 }
