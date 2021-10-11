@@ -17,7 +17,7 @@ public class Persona {
 	private String tipo_doc;
 	
 	@Id
-	@Column(name="doc",nullable = false,unique = true)
+	@Column(name="doc_persona",nullable = false,unique = true)
 	private String doc;
 	
 	@Column(name="apellido",nullable = false,unique = false)
