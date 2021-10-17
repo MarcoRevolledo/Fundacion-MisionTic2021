@@ -21,7 +21,7 @@ public class PadrinoService {
 	@Transactional
 	public void Agregarpadrino(Padrino p) {
 		padrinorepository.save(p);
-		persService.AgregarPersona(p.getPersona());
+		//persService.AgregarPersona(p.getPersona());
 	}
 	@Transactional
 	public void Eliminarpadrino(String doc) {
