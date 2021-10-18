@@ -27,7 +27,7 @@ public class Persona {
 	private String nombres;
 	
 	@Column(name="fec_nac",nullable = false,unique = false)
-	private Date fec_nac;
+	private String fec_nac;
 	
 	@Column(name="foto",nullable = false,unique = false)
 	private File foto;
@@ -54,11 +54,11 @@ public class Persona {
 		this.apellido = apellido;
 	}
 
-	public Date getFec_nac() {
+	public String getFec_nac() {
 		return fec_nac;
 	}
 
-	public void setFec_nac(Date fec_nac) {
+	public void setFec_nac(String fec_nac) {
 		this.fec_nac = fec_nac;
 	}
 
