@@ -26,7 +26,7 @@ public class NiñoService {
 	@Transactional
 	public void AgregarNiño(Niño n) {
 		niñorepository.save(n);
-		persService.AgregarPersona(n.getPersona());
+		//persService.AgregarPersona(n.getPersona());
 	}
 	@Transactional
 	public void EliminarNiño(String doc) {
