@@ -1,13 +1,7 @@
 package com.fundacion.controllers;
 
-
-<<<<<<< HEAD
-=======
 /*
->>>>>>> main
 import java.util.List;
-
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -51,20 +45,13 @@ public class PersonaController {
 			persService.AgregarPersona(p);
 			return new ResponseEntity<Void>(HttpStatus.CREATED);	
 	}
-<<<<<<< HEAD
-=======
-	
->>>>>>> main
+
 	@CrossOrigin(value="*")
 	@DeleteMapping(value="/{documento}")
 	public ResponseEntity<Void> Delete(@PathVariable String documento){
 		persService.EliminarPersona(documento);
 		return new ResponseEntity<Void>(HttpStatus.OK);
 	}
-<<<<<<< HEAD
-=======
-	
->>>>>>> main
 	@CrossOrigin(value="*")
 	@PutMapping(value="/")
 	public ResponseEntity<Void> Update(@RequestBody Persona p){
