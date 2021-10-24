@@ -35,7 +35,11 @@ public class PadrinoController {
 	private ResponseEntity<List<Padrino>> FindAll(){
 		return new ResponseEntity<List<Padrino>>(servPadrino.Listarpadrinos(),HttpStatus.OK);
 	}
+<<<<<<< HEAD
 
+=======
+	
+>>>>>>> main
 	@CrossOrigin(value="*")
 	@GetMapping(value="/{doc}")
 	private ResponseEntity<Padrino> FindByDoc(@PathVariable String doc){
@@ -51,6 +55,10 @@ public class PadrinoController {
 		System.out.println("11");
 		return new ResponseEntity<Void>(HttpStatus.OK);
 	}
+<<<<<<< HEAD
+=======
+	
+>>>>>>> main
 	@CrossOrigin(value="*")
 	@DeleteMapping(value="/{doc}")
 	private ResponseEntity<Void> Delete(@PathVariable String doc){
